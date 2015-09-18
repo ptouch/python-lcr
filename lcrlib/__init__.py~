@@ -1,0 +1,16 @@
+#import os
+# import subprocess
+# import platform
+
+# # Check operating system and load appropriate library.
+# current_platform = platform.system()
+# if current_platform == 'Linux':
+# 	lib_present = os.path.exists('lcrlib/lcr-api/bin/linux/libLightCrafter4500.so.1.0.0')
+# 	if lib_present != True:
+# 		flag = subprocess.Popen(["make -f", "/lcrlib/lcr-api/Makefile"])
+
+#from lcrlib import *
+
+
+
+
