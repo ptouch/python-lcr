@@ -1,5 +1,0 @@
-Linux (via terminal):
-make -f Makefile_Linux
-Shared library will be in /bin/Linux
-
-Windows:

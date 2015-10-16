@@ -7,6 +7,8 @@ from lcrlib import *
 
 '''
 	Rough script to show the basic of the wrapper library. 9/17/2015
+	10/16/2015 - Removed lcrPatternDisplay loop.
+	
 '''
 
 
@@ -61,13 +63,12 @@ lcrSetPatternTriggerMode(True) # Set pattern trigger mode to VSYNC.
 lcrSendPatLut() # Sent patttern LUT to the DMD.
 
 flag = lcrValidatePatLutData() # Validate the LUT. 
+time.sleep(2.0)
+
+raw_input('Press Enter to start.')
 
 if flag != -1:
-	loop = 0
-	### Current lcrPatternDisplay(2) will only start the sequencer if its in a loop. Still looking for a fix.
-	while loop < 100:
-		lcrPatternDisplay(2)
-		loop += 1
+	lcrPatternDisplay(2)
 
 raw_input('Press Enter to stop.')
 
